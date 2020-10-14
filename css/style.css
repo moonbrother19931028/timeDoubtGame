@@ -1,0 +1,119 @@
+body{
+  font-family:'Courier New',monospace;
+  background:#cacaca;
+}
+
+.container{
+  padding-top:20px;
+  margin:0 auto;
+  width:800px;
+  height:500px;
+}
+
+/* ストップウォッチゲーム始まる前のスタイル */
+table{
+  margin:0 auto; 
+  width:500px;
+  height:120px;
+  text-align:center;
+  padding-bottom:10px;
+}
+
+tbody .setTarget{
+  font-size:50px;
+  user-select: none;
+  /* background:#ffff75; */
+}
+
+tbody .upTarget,
+tbody .downTarget,
+tbody .decide{
+  font-size:20px;
+  /* background:#ffff75; */
+  cursor:pointer;
+  user-select: none;
+}
+
+#decidebtn{
+  width:200px;
+  height:50px;
+  font-size:40px;
+  background:#f0f0f0;
+  margin:0 auto;
+  text-align:center;
+  cursor:pointer;
+  border-radius:4px;
+  user-select: none;
+}
+
+
+/* ストップウォッチゲーム始めた後のスタイル */
+
+.stopWatch{
+  margin:0 auto;
+  width:500px;
+  
+}
+
+#time{
+  /* background:#fac0ff; */
+  text-align:center;
+  font-size:80px;
+  height:140px;
+  width:500px;
+  line-height:140px;
+  margin:0;
+  margin-bottom:10px;
+  position:relative;
+}
+
+
+#readyingCount{
+  background:#cacaca;;
+  height:140px;
+  width:500px;
+  position:absolute;
+  top:191px;
+  left:-30px;
+  opacity:0;
+  transition:transform 4s;
+}
+
+#readyingCount.playingCount{
+  transform:translateX(500px);
+  opacity:1;
+}
+
+#readyingCount.stoppingCount{
+  transform:translateX(500px);
+  opacity:0.9;
+}
+
+.control{
+  display:flex;
+  justify-content:space-around;
+}
+
+#startbtn,
+#stopbtn{
+  /* background:#ffff75; */
+  width:200px;
+  height:50px;
+  line-height:50px;
+  text-align:center;
+  font-size:30px;
+  border-radius:4px;
+  cursor:pointer;
+  user-select: none;
+  background:#f0f0f0;
+}
+
+
+
+#decidebtn.inactive,
+#startbtn.inactive,
+#stopbtn.inactive{
+  background:#f0f0f0;
+  opacity:0.2;
+}
+
